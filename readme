@@ -1,5 +1,6 @@
 # Buscador de Repositórios
-Fiz pra treinar fetch e tratamento de estados de UI.
+Fiz pra treinar consumo de API com fetch, async/await e try/catch.
+
 
 Busca repositórios no GitHub por palavra-chave. Digita, aperta ENTER, aparece a lista.
 
@@ -36,6 +37,6 @@ Só abrir o `index.html` no navegador. Sem build, sem dependência.
 ## O que dá pra melhorar depois
 
 - Debounce pra evitar requests duplicados
-- Paginação ou "carregar mais"
+- Paginação ou "carregar mais" 
 - Filtrar por linguagem
 - Botão de enviar
