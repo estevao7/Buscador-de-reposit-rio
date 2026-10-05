@@ -1,4 +1,5 @@
 # Buscador de Repositórios
+Fiz pra treinar fetch e tratamento de estados de UI.
 
 Busca repositórios no GitHub por palavra-chave. Digita, aperta ENTER, aparece a lista.
 
@@ -18,3 +19,23 @@ Busca repositórios no GitHub por palavra-chave. Digita, aperta ENTER, aparece a
 - JavaScript (fetch + async/await)
 
 ## API
+
+https://api.github.com/search/repositories?q={TERMO}&sort=stars&per_page=10
+
+Sem autenticação. Rate limit do GitHub: 10 buscas por minuto por IP.
+
+## Rodando
+
+Só abrir o `index.html` no navegador. Sem build, sem dependência.
+
+## Estrutura
+├── index.html
+├── style.css
+└── script.js
+
+## O que dá pra melhorar depois
+
+- Debounce pra evitar requests duplicados
+- Paginação ou "carregar mais"
+- Filtrar por linguagem
+- Botão de enviar
