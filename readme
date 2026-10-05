@@ -1,0 +1,20 @@
+# Buscador de Repositórios
+
+Busca repositórios no GitHub por palavra-chave. Digita, aperta ENTER, aparece a lista.
+
+## Como funciona
+
+- Busca dispara só no ENTER
+- Enquanto carrega, mostra um loading
+- Sem resultado → empty state
+- Erro na requisição → mensagem amigável
+- Cada card mostra: autor (nome + avatar), nome do repo, descrição,
+  linguagem principal, estrelas e link
+
+## Stack
+
+- HTML
+- CSS
+- JavaScript (fetch + async/await)
+
+## API
