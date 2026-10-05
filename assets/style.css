@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #0c1929;
+  color: #e8f0fe;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.card {
+  background-color: #132f4c;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.search-label {
+  display: block;
+  font-size: 0.875rem;
+  color: #8fafc8;
+  margin-bottom: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #1e4976;
+  border-radius: 8px;
+  background-color: #0a2540;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #4d9fff;
+}
+
+.search-input::placeholder {
+  color: #5c7a9e;
+}
+
+.results {
+  min-height: 80px;
+}
+
+.hint,
+.empty-state,
+.error-state {
+  text-align: center;
+  color: #8fafc8;
+  padding: 1rem 0;
+}
+
+.error-state {
+  color: #7ec8ff;
+}
+
+.loading {
+  text-align: center;
+  color: #8fafc8;
+  padding: 1.5rem 0;
+}
+
+.repo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.repo-item {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #1e4976;
+}
+
+.repo-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.repo-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.repo-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.repo-author {
+  font-size: 0.875rem;
+  color: #8fafc8;
+}
+
+.repo-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.repo-name a {
+  color: #4d9fff;
+  text-decoration: none;
+}
+
+.repo-name a:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  font-size: 0.875rem;
+  color: #b8d4f0;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.repo-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #8fafc8;
+}
+
+.repo-language::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4d9fff;
+  margin-right: 0.35rem;
+}
+
+.repo-link a {
+  color: #8fafc8;
+  text-decoration: none;
+}
+
+.repo-link a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
